@@ -1,0 +1,420 @@
+:root {
+  --primary-color: #303644;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.navbar-brand {
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 1.25rem;
+}
+
+.wu-main-section {
+  padding: 7.5rem 0;
+}
+
+.wu-main-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.wu-main-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wu-main-btn {
+  border: 1px solid var(--primary-color);
+  margin-bottom: 2.5rem;
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  align-items: center; /*Ver*/
+  justify-content: center; /*Hor*/
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+
+.wu-main-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.wu-doc-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.wu-doc-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-bottom: 0;
+  padding: 1.5rem 0;
+}
+
+.wu-doc-card:nth-last-child(1) {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.wu-doc-select,
+.wu-doc-title,
+.wu-doc-date {
+  padding: 0 2rem;
+}
+
+.wu-doc-date {
+  width: 10rem;
+  text-align: center;
+}
+
+.wu-doc-title {
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+  width: 100%;
+}
+
+.wu-local-section {
+  padding: 2.5rem 0;
+  overflow-y: auto;
+  align-items: flex-start;
+}
+
+.wu-pagination .pagination {
+  width: max-content;
+  margin: auto;
+}
+
+.wu-back-btn {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.wu-back-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.wu-back-btn:active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.wu-header-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.wu-header-btns .dropdown-toggle.show {
+  color: #fff !important;
+  background-color: var(--primary-color);
+}
+
+.wu-header-btns .dropdown-menu {
+  border-radius: 0;
+  border: 1px solid var(--primary-color);
+}
+
+.wu-header-btns .input-group {
+  width: max-content;
+}
+
+.wu-header-btns .input-group .btn {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.wu-header-btns .input-group .btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: var(--primary-color);
+}
+
+.wu-create-tab-content .form-control {
+  margin-bottom: 2.5rem;
+}
+
+.wu-header-btns .input-group .form-control {
+  max-width: 20rem;
+}
+
+.wu-signature-owner,
+.wu-signature-status,
+.signature-status,
+.wu-signature-date,
+.wu-signature-reminder {
+  padding: 0 1.5rem;
+}
+
+.wu-create-doc-tabs {
+  justify-content: space-between;
+  border: none;
+  margin-bottom: 2.5rem;
+}
+
+.wu-create-doc-tabs .nav-item {
+  display: flex;
+  width: 48%;
+}
+
+.wu-create-doc-tabs .nav-item .nav-link {
+  padding: 0.5rem 2rem;
+  border-radius: 0;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.wu-create-doc-tabs .nav-item .nav-link:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  opacity: 0.75;
+}
+
+.wu-create-doc-tabs .nav-item .nav-link.active:hover {
+  opacity: 1;
+}
+
+.wu-create-doc-tabs .nav-item .nav-link.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.wu-create-tab-content {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+}
+
+.wu-submit {
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  display: block;
+  margin-left: auto;
+}
+
+.wu-submit:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+}
+
+main {
+  padding-top: 57px;
+}
+
+.wu-navbar {
+  box-shadow: 0px 15px 10px -15px rgba(99, 99, 99, 0.2);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.mobile-nav {
+  background: var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1040;
+  bottom: 0;
+}
+
+.mobile-nav .nav {
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.mobile-nav .nav-link {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.75rem;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.mobile-nav .nav-link img {
+  height: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav .nav-link span.menu-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.mobile-nav .nav-link .badge-cart {
+  top: 0.7rem;
+  right: 1.3rem;
+}
+
+.navbar-toggler {
+  border-radius: 0;
+  border-color: var(--primary-color);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #000;
+}
+
+.wu-pagination .page-item {
+  margin: 0 0.8rem;
+}
+
+.wu-pagination .page-item .page-link {
+  border-color: var(--primary-color);
+  border-radius: 0 !important;
+  color: var(--primary-color);
+}
+
+.wu-pagination .page-item .page-link:hover,
+.wu-pagination .page-item .page-link:active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.wu-pagination .page-item .page-link:focus {
+  box-shadow: none;
+}
+
+.wu-signature-reminder i {
+  color: var(--primary-color);
+}
+
+/* The checkbox container */
+.wu-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 25px;
+}
+
+/* Hide the browser's default checkbox */
+.wu-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.wu-checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.wu-checkbox-container .checkmark {
+  background-color: #c4c4c4;
+}
+
+/* When the checkbox is checked, add a blue background */
+.wu-checkbox-container input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.wu-checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.wu-checkbox-container .checkmark:after {
+  left: 9px;
+  top: 7px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .wu-doc-card {
+    flex-direction: column;
+  }
+
+  .wu-doc-title {
+    padding: 1rem;
+    border: 0;
+    text-align: center;
+  }
+
+  .wu-header-btns .input-group .form-control {
+    width: 10rem;
+  }
+
+  .wu-main-section {
+    height: calc(100vh - 57px - 67px);
+  }
+}
