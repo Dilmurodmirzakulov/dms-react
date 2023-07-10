@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ hw, hw2 }) => {
+  console.log("state:", hw);
+  console.log("state2:", hw2);
   return (
     <header>
       <nav class="navbar navbar-expand-lg wu-navbar">

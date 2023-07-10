@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import MobileTabs from "../components/MobileTabs";
 import Header from "../components/Header";
+import Adding from "../components/Adding";
 
 const Home = () => {
+  const [count, setCount] = useState(1);
+
+  console.log("count: " + count);
   return (
     <>
       <Header />
@@ -13,6 +17,7 @@ const Home = () => {
               <a href="./local.html" class="wu-main-btn">
                 Local
               </a>
+              <Adding setCount={setCount} />
               <a href="#" class="wu-main-btn">
                 Ijro
               </a>
