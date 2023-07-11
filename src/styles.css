@@ -25,7 +25,7 @@
 }
 
 .wu-main-section {
-  height: 100vh;
+  height: calc(100vh - 57px);
   display: flex;
   align-items: center;
 }

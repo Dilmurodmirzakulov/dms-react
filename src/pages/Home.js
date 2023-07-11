@@ -9,7 +9,6 @@ const Home = () => {
   console.log("count: " + count);
   return (
     <>
-      <Header />
       <main>
         <section class="wu-main-section">
           <div class="container">
@@ -25,7 +24,6 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <MobileTabs />
     </>
   );
 };
