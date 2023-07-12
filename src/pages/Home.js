@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Adding from "../components/Adding";
+import { fetchTest } from "../api/test";
 
 const Home = () => {
   const [count, setCount] = useState(1);
-
-  console.log("count: " + count);
+  useEffect(() => {
+    const test = async () => {
+      let res = await fetchTest();
+      console.log("res", res)
+    };
+    test();
+  }, []);
   return (
     <>
       <main>
