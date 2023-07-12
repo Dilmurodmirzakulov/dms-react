@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import MobileTabs from "../components/MobileTabs";
-import Header from "../components/Header";
 import Adding from "../components/Adding";
 
 const Home = () => {
